@@ -33,6 +33,19 @@ The AI assistant is capable of making object detections of 96 different objects 
   </tbody>
 </table>
 
+As can be seen below, the model detects a few different objects in real time and the results are pretty accurate considering the quality of the camera and the distance between of the camera to the objects. At the same time, the AI assistant is asked what objects it sees in the frame. It answers "I see [Book, Laptop, Couch, Person]". When the cell phone was brought into the frame, the question was asked again, and this time it answers "I see [Book, Laptop, Cell Phone, Person]" since the cell phone was blocking the couch. In order to increase the FPS you could use a lighter model. You are free to choose any kind of pre-trained model for this project. If you use the default one (the one in the project), at the first run, it will download the model from a link and create a folder called "pretrained model". This is only going to take about 30 seconds and it is a one time thing as long as you don't change the model or delete the created folders. The object detection model used in this project is ssd resnet50 v1 fpn 640x640. It is a medium size model. The bigger the size of the model, the FPS is lower depending on your gpu. 
+
+<table>
+  <tbody>
+    <tr>
+      <td> <img src="https://user-images.githubusercontent.com/111835151/186786136-27124ce6-5870-4a54-91fd-34d4b2e5e1f0.gif"></td>
+    </tr>
+    <tr>
+      <td> <img src="https://user-images.githubusercontent.com/111835151/186786302-68505599-5220-4d02-9885-67b16535e7b7.gif"></td>
+    </tr>
+  </tbody>
+</table>
+
 Finally, the AI assistant uses multiple APIs from different sources to answer some of the most common questions that people might ask and do some of the basic tasks that people do daily. Some of these tasks are sending an email or a WhatsApp message, do Google, Wikipedia search etc. The list of the APIs used in this project are also listed below.
 
 ## List of APIs:
@@ -58,14 +71,3 @@ Finally, the AI assistant uses multiple APIs from different sources to answer so
 | --- | --- |
 | Face Recognition | "face recognition" |
 | Object Detection | "object detection" |
-
-<table>
-  <tbody>
-    <tr>
-      <td> <img src="https://user-images.githubusercontent.com/111835151/186786136-27124ce6-5870-4a54-91fd-34d4b2e5e1f0.gif"></td>
-    </tr>
-    <tr>
-      <td> <img src="https://user-images.githubusercontent.com/111835151/186786302-68505599-5220-4d02-9885-67b16535e7b7.gif"></td>
-    </tr>
-  </tbody>
-</table>
